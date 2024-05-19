@@ -47,6 +47,7 @@ const DashBoard = () => {
         </div>
       </div>
         
+      </div>
       {/* Third div start here */}
       
           {arr.map((item,index)=>{
@@ -66,7 +67,6 @@ const DashBoard = () => {
       </div>
             )
           })}
-          </div>
     </>
   )
 }
