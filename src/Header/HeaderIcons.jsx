@@ -5,7 +5,7 @@ import { FaRegEnvelope } from "react-icons/fa6";
 const HeaderIcons = () => {
   return (
     <>
-    <div className='flex justify-around items-center  gap-x-7'>
+    <div className='flex justify-around items-center  gap-x-3'>
         <div className='text-black bg-gray-200 p-2  rounded text-[20px]'>
         <IoNotificationsOutline/>
         </div>
