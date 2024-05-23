@@ -29,11 +29,11 @@ const DashBoard = () => {
           <p className='text-[20px] font-medium text-black'>$4.435,43</p>
           <p className='text-base text-gray-500 font-normal'>increase</p>
           </div>
-          <p className='px-3 py-1 bg-green-400 rounded-full text-white'>23%</p>
+          <p className='px-3 py-1 bg-black-400 rounded-full text-white'>23%</p>
         </div>
       </div>
       {/* Second div start here */}
-      <div className='w-[20%] h-auto rounded-lg bg-blue-100'>
+      <div className='w-[20%] h-auto rounded-lg bg-red-400'>
         <div className=''>
         <div className='flex justify-center gap-4 py-3 items-center'>
           <p className='text-[25px] text-blue-500'><HiChartPie/></p>
