@@ -16,13 +16,12 @@ import { FaPowerOff,FaPlus } from "react-icons/fa6";
 
 
 const SideBar = () => {
-  const [activeMenu, setActiveMenu] = useState("/dashboard");
+  const [activeMenu, setActiveMenu] = useState("/");
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
-  console.log(isSidebarOpen);
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
     setSidebarOpen(true);
@@ -43,9 +42,9 @@ const SideBar = () => {
        
         <div
           className=" shadow-sidebox w-[220px] h-screen md:h-full lg:h-full 
-          text-center  font-mono font-normal text-[16px] leading-8  "
+          text-center  font-mono font-normal text-[16px] leading-8 mb-5 "
         >
-          <div className="flex justify-start items-center  gap-3 pl-4 ">
+          <div className="flex justify-start items-center  gap-3 pl-4  ">
             <p className="p-1 text-white bg-red-400 rounded-full "><MdElectricBolt/></p>
             <p className="text-black text-3xl font-bold">Ramora</p>
           </div>
@@ -59,7 +58,7 @@ const SideBar = () => {
           <Link
             to="/dashboard"
             onClick={() => handleMenuClick("/dashboard")}
-            className={` {activeMenu === "/" && "active"}`}
+            className={` ${activeMenu === "/dashboard" && "active"}`}
           >
             <div className="flex justify-start items-center w-[190px] h-auto  gap-3 ml-4 px-4 py-1 rounded-lg mb-1 text-white bg-blue-500 hover:text-white hover:bg-blue-500 ">
               <PiSquaresFourBold className="icons" />
