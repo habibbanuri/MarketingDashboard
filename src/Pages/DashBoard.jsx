@@ -21,7 +21,7 @@ const DashBoard = () => {
   ]
   return (
     <>
-    <div className='flex px-5 gap-4 '>
+    <div className='flex px-5 gap-4 bg-red-500 '>
       {/* First div start here */}
       <div className=' w-[40%] h-auto rounded-lg py-2 shadow-md'>
         <div className='flex justify-between items-center px-3'>
@@ -33,7 +33,7 @@ const DashBoard = () => {
         </div>
       </div>
       {/* Second div start here */}
-      <div className='w-[20%] h-auto rounded-lg bg-red-400'>
+      <div className='w-[20%] h-auto rounded-lg bg-pink-400'>
         <div className=''>
         <div className='flex justify-center gap-4 py-3 items-center'>
           <p className='text-[25px] text-blue-500'><HiChartPie/></p>
